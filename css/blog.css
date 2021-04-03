@@ -1,6 +1,8 @@
 
 .blog {
+  padding-top: 100px;
 	padding-bottom: 100px;
+  background-color: #A9A9A9;
 }
 
 .blog__wrapper {
@@ -25,8 +27,8 @@
 
 .blog__photo, .blog__photo_center {
 	display: block;
-	max-width: 100%;
-	max-height: 255px;
+	width: 100%;
+/*	max-height: 255px;*/
 	height: auto;
 	object-fit: cover;
 	transition: .5s ease;
@@ -44,25 +46,25 @@
 	display: block;
 	margin-top: 28px;
 	font-family: 'roboto';
-  	font-size: 20px;
-  	font-weight: 600;
-  	font-stretch: normal;
-  	font-style: normal;
-  	line-height: 1.5;
-  	text-align: left;
-  	color: #2b2d5c;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  color: #2b2d5c;
 }
 
 .blog__date {
 	margin-top: 24px;
 	font-family: 'roboto';
-  	font-size: 15px;
-  	font-weight: 600;
-  	font-stretch: normal;
-  	font-style: normal;
-  	letter-spacing: normal;
-  	text-align: left;
-  	color: rgba(43, 45, 92, 0.8);
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(43, 45, 92, 0.8);
 }
 
 .blog__date span {
@@ -73,14 +75,14 @@
 .blog__text {
 	margin-top: 26px;
 	font-family: 'roboto';
-  	font-size: 16px;
-  	font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
  	font-stretch: normal;
-  	font-style: normal;
-  	line-height: 1.75;
-  	letter-spacing: normal;
-  	text-align: left;
-  	color: rgba(89, 86, 102, 0.8);
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(89, 86, 102, 0.8);
 }
 
 .blog_link {
@@ -88,15 +90,15 @@
 	margin-top: 25px;
 	max-width: 120px;
 	font-family: 'roboto';
-  	font-size: 16px;
-  	font-weight: normal;
-  	font-stretch: normal;
-  	font-style: normal;
-  	line-height: 2;
-  	letter-spacing: normal;
-  	text-align: left;
-  	color: #595666;
-  	transition: .6s;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #595666;
+  transition: .6s;
 
   	text-shadow: 5px 5px 5px #ffcc00;
 }
@@ -113,15 +115,15 @@
 	margin-bottom: 50px;
 	margin-top: 43px;
 	
-  	font-family: 'roboto';
-  	font-size: 20px;
-  	font-weight: 300;
-  	font-stretch: normal;
-  	font-style: normal;
-  	line-height: 1.7;
-  	letter-spacing: normal;
-  	text-align: center;
-  	color: rgba(43, 45, 92, 0.8);
+  font-family: 'roboto';
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(43, 45, 92, 0.8);
 }
 
 .blog__shadow {

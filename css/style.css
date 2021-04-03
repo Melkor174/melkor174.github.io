@@ -13,6 +13,10 @@
  	box-sizing: border-box;
 }
 
+.pages {
+	overflow: hidden;
+}
+
 a {
  	text-decoration: none;
 }
@@ -128,6 +132,14 @@ ul {
 		padding-top: calc(15px + (150 - 19) * ((100vw - 320px) / (1200 - 320)));
 	}
 
+	.logo {
+		max-width: calc(100px + ( 170 - 100) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.logo__title {
+		font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (1200 - 320)));
+	}
+
 	.intro__title {
 		font-size: calc(19px + (45 - 19) * ((100vw - 320px) / (1200 - 320)));
 	}
@@ -137,10 +149,13 @@ ul {
 	}
 
 	.intro__btn {
-		width: calc(150px + (221 - 150) * ((100vw - 320px) / (1200 - 320)));
-		height: calc(40px + (60 - 40) * ((100vw - 320px) / (1200 - 320)));
-		margin-top: calc(15px + (49 - 15) * ((100vw - 320px) / (1200 - 320)));
+		width: calc(180px + (221 - 150) * ((100vw - 320px) / (1200 - 320)));
 
+		margin-top: calc(15px + (49 - 15) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.social_block {
+		right: calc(20px + (90 - 20) * ((100vw - 320px) / (1200 - 320)));
 	}
 
 
@@ -148,6 +163,7 @@ ul {
 
 	.myself {
 		padding-top: calc(35px + (99 - 35) * ((100vw - 320px) / (1200 - 320)));
+		padding-bottom: calc(5px + (99 - 5) * ((100vw - 320px) / (1200 - 320)));
 	}
 
 	.myself__photo {
@@ -167,13 +183,142 @@ ul {
 	}
 
 	.myself__subtitle {
+		margin-top: calc(5px + (40 - 5) * ((100vw - 320px) / (1200 - 320)));
 		text-align: center;
 	}
 
 	.myself__content_wrapper {
+		margin-top: 0;
 		justify-content: center;
 	}
+
+	.myself__item {
+		width: 100%;
+		margin-top: 22px;
+	}
+
+
+	.myself__item_title  {
+		font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.myself__item_photo {
+		margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+
+	/*-------------portfolio*/
+
+	.portfolio {
+		padding-bottom: calc(0px + (135 - 0) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+
+	.portfolio_col_1 {
+		padding-top: calc(5px + (206 - 5) * ((100vw - 320px) / (1200 - 320)));
+		padding-bottom: calc(5px + (270 - 5) * ((100vw - 320px) / (1200 - 320)));
+		padding-left: calc(5px + (95 - 5) * ((100vw - 320px) / (1200 - 320)));
+		
+	}
+
+	.portfolio__text {
+		margin-top: calc(10px + (74 - 10) * ((100vw - 320px) / (1200 - 320)));
+		font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.portfolio__read_more {
+		margin-top: calc(10px + (35 - 10) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+
+	/*-----------------------------blog*/
+
+	.blog {
+		padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1200 - 320)));
+		padding-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.blog__content {
+		padding-bottom: calc(10px + (63 - 10) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.blog__title, .blog__title_contetn {
+
+		font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.blog__text {
+		font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.blog_link  {
+		margin-top: calc(10px + (25 - 10) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+
+	/*---------------------------------footer*/
+
+	.footer {
+		padding-top: calc(25px + (100 - 25) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.footer__contacts, .footer__social_title {
+		font-size: calc(11px + (20 - 11) * ((100vw - 320px) / (1200 - 320)));
+		margin-top: calc(15px + (30 - 15) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.social__wrapper_footer {
+		margin-top: calc(10px + (35 - 10) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.footer__mail, .number__phone {
+		font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1200 - 320)));
+		margin-top: calc(8px + (15 - 8) * ((100vw - 320px) / (1200 - 320)));
+	}
+
 }
 
+
+
+
+
+
+
+@media (max-width: 900px) {
+	.nav {
+		display: none;
+	}
+
+	.intro__social::after {
+		display: none;
+	}
+
+	.intro__social::before {
+		display: none;
+	}
+
+	.portfolio_col_1, .portfolio_col_2, .portfolio_col_3 {
+		width: 100%;
+	}
+
+	.portfolio__text {
+		max-width: 100%;
+	}
+
+
+	.blog__item {
+		max-width: 100%;
+	}
+
+}
+
+
+@media (max-width: 700px) {
+
+	.footer__item {
+		margin: 0 auto;
+		width: 50%;
+	}
+}
 
 
